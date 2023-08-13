@@ -4,16 +4,11 @@ html {
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif'; /* TODO: Find new fonts, change here to implement globally.  */
   color: #444;
-  background: #022c43;      /* TODO: Adjust color pallette.  */
+  background: #EFE6DD;      
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

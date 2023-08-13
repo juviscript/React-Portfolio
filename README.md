@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Color Palatte of Site Currently
+
+Raisin Black (#231F20)
+Persian Red (#BB4430)
+Verdigris (#7EBDC2)
+Vanilla (#F3DFA2)
+Linen (#EFE6DD)
