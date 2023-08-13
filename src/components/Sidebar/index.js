@@ -1,8 +1,6 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../assets/images/juviscript-logo.png'
-
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faComputer,
