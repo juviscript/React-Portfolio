@@ -44,13 +44,17 @@
     margin: 0 auto;
     z-index: 1;
     transform-style: preserve-3d;
-    animation: fadeIn 1.5s forwards;
+    animation: fadeIn .5s forwards;
     animation-delay: 1s;
   }
   
   .Typewriter__cursor {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: bolder
+  }
+
+  .disappear {
+    visibility: hidden;
   }
 
   .text-zone {
