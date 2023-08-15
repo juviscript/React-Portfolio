@@ -18,6 +18,11 @@ const About = () => {
                 .pauseFor(800)
                 .typeString('<span class = "about-title">About Me </span>')
                 .pauseFor(800)
+                .callFunction(() => {
+                  document
+                    .querySelector('.Typewriter__cursor') // Allows cursor to disappear after a short time, instead of continuously blinking.
+                    .classList.add('disappear')
+                })
             }}
           />
 

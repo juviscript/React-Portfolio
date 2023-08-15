@@ -1,10 +1,52 @@
 import Loader from 'react-loaders'
 import Typewriter from 'typewriter-effect'
 import './index.scss'
-
-import React from 'react'
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_czafr7g',
+        'template_7xjb1fd',
+        form.current,
+        '5sqovvvpnvGhLGxyg'
+      )
+      .then(
+        () => {
+          toast.success('Message successfully sent!', {
+            position: 'top-right',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          })
+        },
+        () => {
+          toast.error('Server error. Please try again later!', {
+            position: 'top-right',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+          })
+        }
+      )
+  }
+
   return (
     <>
       <div className="container contact-page">
@@ -20,6 +62,11 @@ const Contact = () => {
                 .pauseFor(800)
                 .typeString('<span class = "about-title">Contact Me </span>')
                 .pauseFor(800)
+                .callFunction(() => {
+                  document
+                    .querySelector('.Typewriter__cursor') // Allows cursor to disappear after a short time, instead of continuously blinking.
+                    .classList.add('disappear')
+                })
             }}
           />
 
@@ -31,16 +78,16 @@ const Contact = () => {
           </p>
 
           <div className="contact-form">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
                 </li>
 
-                <li>
+                <li className="half">
                   <input
                     type="email"
-                    name="email"
+                    name="reply_to"
                     placeholder="Email"
                     required
                   />
@@ -67,8 +114,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
       <Loader type="pacman" />
+      <ToastContainer />
     </>
   )
 }
