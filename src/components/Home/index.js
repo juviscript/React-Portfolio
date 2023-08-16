@@ -2,11 +2,9 @@ import './index.scss'
 import { Link } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
 import Loader from 'react-loaders'
-import React, { useState } from 'react'
+import Logo from '../../assets/images/JS (1).gif'
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = []
   return (
     <>
       <div className="container home-page">
@@ -30,7 +28,7 @@ const Home = () => {
                 .pauseFor(2000)
                 .callFunction(() => {
                   document
-                    .querySelector('.Typewriter__cursor')                 // Allows cursor to disappear after a short time, instead of continuously blinking.
+                    .querySelector('.Typewriter__cursor') // Allows cursor to disappear after a short time, instead of continuously blinking.
                     .classList.add('disappear')
                 })
             }}
@@ -41,8 +39,10 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
+        <div className="logo-container">
+          {/* <img src={Logo} /> */}
+        </div>
       </div>
-
       <Loader type="pacman" />
     </>
   )

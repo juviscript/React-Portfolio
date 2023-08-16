@@ -1,0 +1,15 @@
+.project-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  right: 5%;
+  width: 47%;
+  height: 100%;
+  // overflow-y: scroll;
+  // border-radius: 20px;
+  // box-shadow: 16px 14px 26px -3px rgba(65, 54, 5, 0.1);
+  // background: #f3dfa2;
+}

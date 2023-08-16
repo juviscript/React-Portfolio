@@ -59,10 +59,69 @@
 
   .text-zone {
     position: absolute;
-    left: 18%;
+    left: 10%;
     top: 50%;
     transform: translateY(-50%);
     width: 50%;
     max-height: 90%;
   }
   
+  @media screen and (max-width: 1200px) {
+    .page {
+      position: initial;
+    }
+  
+    .container {
+      position: initial;
+      height: auto;
+      min-height: auto;
+  
+      &.contact-page,
+      &.about-page,
+      &.portfolio-page {
+        .text-zone {
+          position: initial;
+          transform: none;
+          width: 100%;
+          display: block;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+      }
+  
+      &.portfolio-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+  
+        h1.page-title {
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+  
+        .image-box {
+          height: 200px;
+          max-width: calc(50% - 10px);
+        }
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }

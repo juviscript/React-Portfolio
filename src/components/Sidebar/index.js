@@ -1,6 +1,6 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../assets/images/juviscript-logo.png'
+import Logo from '../../assets/images/juviscript-logo-light.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faComputer,
@@ -24,7 +24,7 @@ const Sidebar = () => {
           className="home" 
           to="/"
         >
-          <FontAwesomeIcon icon={faHome} color="#F3DFA2" />
+          <FontAwesomeIcon icon={faHome} color="#7EBDC2" />
         </NavLink>
 
         <NavLink
@@ -33,7 +33,7 @@ const Sidebar = () => {
           className="about"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="#F3DFA2" />
+          <FontAwesomeIcon icon={faUser} color="#7EBDC2" />
         </NavLink>
 
         <NavLink
@@ -42,7 +42,7 @@ const Sidebar = () => {
           className="contact"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#F3DFA2" />
+          <FontAwesomeIcon icon={faEnvelope} color="#7EBDC2" />
         </NavLink>
 
         <NavLink
@@ -51,7 +51,7 @@ const Sidebar = () => {
           className="projects"
           to="/projects"
         >
-          <FontAwesomeIcon icon={faComputer} color="#F3DFA2" />
+          <FontAwesomeIcon icon={faComputer} color="#7EBDC2" />
         </NavLink>
       </nav>
 
