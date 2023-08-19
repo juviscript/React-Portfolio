@@ -42,7 +42,7 @@ const Projects = () => {
             gif={GamegarGif}
             title="Gamegar"
             description="Simple and clean video game catalog. Can query by title and ID as well as add new video game entries. Har de har har. Just trying to work on getting something to fill out the entire screen heheeheh"
-            tools={["html", "css"]}
+            tools={['html', 'css', 'javascript', 'java', 'springboot', 'aws', 'dynamodb']}
           />
           {/* <Card />
           <Card /> */}
