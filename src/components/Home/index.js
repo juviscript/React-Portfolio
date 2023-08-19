@@ -2,7 +2,6 @@ import './index.scss'
 import { Link } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
 import Loader from 'react-loaders'
-import Logo from '../../assets/images/JS (1).gif'
 
 const Home = () => {
   return (
