@@ -5,13 +5,15 @@
   position: relative;
   width: 48vw;
   max-width: 2000px;
-  height: 25vh;
+  height: 30vh;
   border-radius: 20px;
-  background-color: white;
+  background-color: #F7F1DE;
   -webkit-animation-duration: 10s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+
+ 
 
   &:hover {
     scale: 1.05;
@@ -32,16 +34,53 @@
 
   .info {
     max-width: 55%;
-    height: fit-content;
+    // height: fit-content;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    h2 {
+      margin: 0 0 10px 0;
+    }
 
     .game-title {
       font-size: 30px;
     }
 
     .description {
+      min-height: 60px;
+      margin: auto;
       font-size: 14px;
       font-weight: 400;
+     
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 70%;
+      margin: 20px auto;
+    }
+
+    .flat-button {
+      color: white;
+      background: #91B6B3;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      font-family: Tahoma, Geneva, Verdana, sans-serif;
+      text-decoration: none;
+      padding: 5px 15px;
+      border: 2px solid #91B6B3;
+      border-radius: 5px;
+      margin: auto;
+      float: right;
+      cursor: pointer;
+
+      &:hover {
+        background: none;
+        color: #91B6B3;
+        transform: scale(1.02);
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 
@@ -50,15 +89,17 @@
     height: fit-content;
 
     .stationary {
-      width: 25vh;
-      height: 14vh;
+      width: 28vh;
+      height: 17vh;
       object-fit: cover;
+      border-radius: 5px;
     }
 
     .gif {
       display: none;
-      width: 24vh;
+      width: 28vh;
       height: 17vh;
+      border-radius: 5px;
     }
   }
 
@@ -70,35 +111,39 @@
     gap: 15px;
     height: 12%;
     text-align: center;
-    margin-right: 15px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 0 15px 20px 0;
 
     .hide {
-        display: none;
+      display: none;              /* Teritary operator in 'icons' section removes this class if the relevant prop is passed in */
     }
-    
+
     .float {
       &:hover {
         animation-name: floating;
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
+
+        @keyframes floating {
+          0% {
+            transform: translate(0, 0px);
+          }
+          50% {
+            transform: translate(0, -3px);
+          }
+          100% {
+            transform: translate(0, 0px);
+          }
+        }
       }
 
-      @keyframes floating {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, -3px); }
-        100%   { transform: translate(0, 0px); }   
+      
     }
-    }
-   
-    
   }
 
   &:hover {
     .stationary {
-      display: none;
+      display: none;        /* On hover of the card, hides the icon/logo of the site and shows a demo gif. */
     }
 
     .gif {
@@ -145,3 +190,5 @@
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
+
+

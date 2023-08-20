@@ -72,8 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Color Palatte of Site Currently
 
-Raisin Black (#231F20)
-Persian Red (#BB4430)
-Verdigris (#7EBDC2)
-Vanilla (#F3DFA2)
-Linen (#EFE6DD)
+Rich Black (#031926)
+Cambridge Blue (#77ACA2)
+Ash gray (#91B6B3)
+Teal (#468189)
+Floral White (#FBF8EE)
+Parchment (#F4E9CD)

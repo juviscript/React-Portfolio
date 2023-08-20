@@ -9,7 +9,7 @@ p.text-zone {
 }
 
 .about-title {
-    color: #231F20;
+    color: #031926;
     font-size: 56px;
     line-height: 53px;
     font-family: 'Coolvetica';
@@ -19,7 +19,7 @@ p.text-zone {
     &::before {
         content: '<h1>';
         font-family: monospace;
-        color: #BB4430;
+        color: #77ACA2;
         font-size: 18px;
         position: absolute;
         left: -40px;
@@ -31,7 +31,7 @@ p.text-zone {
     &::after {
         content: '</h1>';
         font-family: monospace;
-        color: #BB4430;
+        color: #77ACA2;
         font-size: 18px;
         position: absolute;
         left: -40px;

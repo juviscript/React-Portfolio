@@ -10,7 +10,7 @@
       }
 
     .intro {
-    color: #231F20;
+    color: #031926;
     font-size: 56px;
     line-height: 53px;
     margin: 0;
@@ -23,7 +23,7 @@
         &::before {
             content: '<h1>';
             font-family: monospace;
-            color: #BB4430;
+            color: #77ACA2;
             font-size: 18px;
             position: absolute;
             left: -60px;
@@ -36,7 +36,7 @@
         &::after {
             content: '</h1>';
             font-family: monospace;
-            color: #BB4430;
+            color: #77ACA2;
             font-size: 18px;
             position: absolute;
             margin-top: 15px;
@@ -58,15 +58,15 @@
     }
 
     .flat-button {
-        color: #EFE6DD;
-        background: #7EBDC2;
+        color: #F4E9CD;
+        background: #91B6B3;
         font-size: 13px;
         font-weight: 500;
         letter-spacing: 3px;
         font-family: Tahoma, Geneva, Verdana, sans-serif;
         text-decoration: none;
         padding: 10px 20px;
-        border: 2px solid #7EBDC2;
+        border: 2px solid #91B6B3;
         border-radius: 5px;
         margin-top: 20px;
         float: left;
@@ -75,7 +75,7 @@
 
         &:hover {
             background: none;
-            color: #7EBDC2;
+            color: #91B6B3;
             transform: scale(1.02);
             transition: all .3s ease-in-out;
         }

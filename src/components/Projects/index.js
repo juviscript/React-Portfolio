@@ -5,6 +5,8 @@ import Typewriter from 'typewriter-effect'
 import Card from './Card'
 import Gamegar from '../../assets/images/gamegar-logo.png'
 import GamegarGif from '../../assets/images/gamegar-overview.gif'
+import Aniverse from '../../assets/images/aniverse-logo.png'
+import Portfolio from '../../assets/images/portfolio-logo.png'
 
 const Projects = () => {
   return (
@@ -41,11 +43,53 @@ const Projects = () => {
             img={Gamegar}
             gif={GamegarGif}
             title="Gamegar"
-            description="Simple and clean video game catalog. Can query by title and ID as well as add new video game entries. Har de har har. Just trying to work on getting something to fill out the entire screen heheeheh"
-            tools={['html', 'css', 'javascript', 'java', 'springboot', 'aws', 'dynamodb']}
+            description="Simple and clean video game catalog. Built a basic front-end, Spring Boot back-end and was deployable on AWS."
+            github="https://github.com/juviscript/Gamegar"
+            youtube=""
+            tools={[
+              'html',
+              'css',
+              'javascript',
+              'java',
+              'springboot',
+              'aws',
+              'dynamodb',
+            ]}
           />
-          {/* <Card />
-          <Card /> */}
+          <Card
+            img={Aniverse}
+            gif={GamegarGif}
+            title="AniVerse"
+            description="Robust anime catalog where you can create an account, follow friends, add anime to your list of favorites. Built with basic front-end and a Spring Boot backend. Deployed on AWS and incorprated AWS Lambdas for a notification system. Database is filled by External API (AniList) using GraphQL."
+            github=""
+            youtube=""
+            tools={[
+              'html',
+              'css',
+              'javascript',
+              'java',
+              'springboot',
+              'aws',
+              'dynamodb',
+              'graphql',
+              'awslambda',
+            ]}
+          />
+
+          <Card
+            img={Portfolio}
+            gif={GamegarGif}
+            title="Personal Porfolio"
+            description="This very website we're using! Built on React.js and has seveal node libraries and components installed. One of the first few React projects I've worked on!"
+            github="https://github.com/juviscript/juviscript-portfolio"
+            youtube=""
+            tools={[
+              'html',
+              'css',
+              'javascript',
+              'react',
+            ]}
+          />
         </div>
       </div>
 

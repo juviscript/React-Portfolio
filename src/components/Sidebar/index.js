@@ -24,7 +24,7 @@ const Sidebar = () => {
           className="home" 
           to="/"
         >
-          <FontAwesomeIcon icon={faHome} color="#7EBDC2" />
+          <FontAwesomeIcon icon={faHome} color="#91B6B3" />
         </NavLink>
 
         <NavLink
@@ -33,7 +33,7 @@ const Sidebar = () => {
           className="about"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="#7EBDC2" />
+          <FontAwesomeIcon icon={faUser} color="#91B6B3" />
         </NavLink>
 
         <NavLink
@@ -42,7 +42,7 @@ const Sidebar = () => {
           className="contact"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#7EBDC2" />
+          <FontAwesomeIcon icon={faEnvelope} color="#91B6B3" />
         </NavLink>
 
         <NavLink
@@ -51,20 +51,20 @@ const Sidebar = () => {
           className="projects"
           to="/projects"
         >
-          <FontAwesomeIcon icon={faComputer} color="#7EBDC2" />
+          <FontAwesomeIcon icon={faComputer} color="#91B6B3" />
         </NavLink>
       </nav>
 
       <ul>
         <li>
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/juvi-panaguiton/"> 
-            <FontAwesomeIcon icon = {faLinkedin} color = "#BB4430" /> 
+            <FontAwesomeIcon icon = {faLinkedin} color = "#77ACA2" /> 
           </a>
         </li>
 
         <li>
           <a target="_blank" rel="noreferrer" href="https://github.com/juviscript"> 
-            <FontAwesomeIcon icon = {faGithub} color = "#BB4430" /> 
+            <FontAwesomeIcon icon = {faGithub} color = "#77ACA2" /> 
           </a>
         </li>
       </ul>

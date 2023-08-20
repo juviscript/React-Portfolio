@@ -3,7 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { RiReactjsLine } from 'react-icons/ri'
 import { FaSass, FaJava, FaAws } from 'react-icons/fa'
 import { BiLogoSpringBoot, BiLogoGraphql } from 'react-icons/bi'
-import { SiAwslambda, SiAmazondynamodb, SiCss3, SiHtml5, SiJavascript } from 'react-icons/si'
+import {
+  SiAwslambda,
+  SiAmazondynamodb,
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+} from 'react-icons/si'
 import React, { useRef } from 'react'
 
 const Card = (props) => {
@@ -16,71 +22,82 @@ const Card = (props) => {
 
       <div className="info">
         <h2 className="game-title">{props.title}</h2>
-        <span className="description">{props.description}</span>
-
+        <div className="description">{props.description}</div>
+        <div className='buttons'>
+          <button className="flat-button">Recorded Demo</button>
+          <a target="_blank" rel="noreferrer" href={props.github}> 
+          <button className="flat-button">Source Code</button>
+          </a>
+        </div>
         <div className="icons">
           <SiHtml5
-            size={30}
+            size={25}
             className={`${props.tools.includes('html') ? 'float' : 'hide'}`}
             color="#e44d26"
             title="HTML 5"
           />
           <SiCss3
-            size={30}
+            size={25}
             className={`${props.tools.includes('css') ? 'float' : 'hide'}`}
             color="#1b84c1"
             title="CSS 3"
           />
           <FaSass
-            size={30}
+            size={25}
             className={`${props.tools.includes('sass') ? 'float' : 'hide'}`}
             color="#c76494"
             title="SASS"
           />
           <SiJavascript
-            size={30}
-            className={`${props.tools.includes('javascript') ? 'float' : 'hide'}`}
+            size={25}
+            className={`${
+              props.tools.includes('javascript') ? 'float' : 'hide'
+            }`}
             color="#e9d44d"
             title="JavaScript"
           />
           <RiReactjsLine
-            size={30}
+            size={25}
             className={`${props.tools.includes('react') ? 'float' : 'hide'}`}
             color="#00d1f7"
             title="React"
           />
           <FaJava
-            size={30}
+            size={25}
             className={`${props.tools.includes('java') ? 'float' : 'hide'}`}
             color="#d22d2d"
             title="Java"
           />
           <BiLogoSpringBoot
-            size={30}
-            className={`${props.tools.includes('springboot') ? 'float' : 'hide'}`}
+            size={25}
+            className={`${
+              props.tools.includes('springboot') ? 'float' : 'hide'
+            }`}
             color="#6aad3d"
             title="Spring Boot"
           />
           <BiLogoGraphql
-            size={30}
+            size={25}
             className={`${props.tools.includes('graphql') ? 'float' : 'hide'}`}
             color="#de33a6"
             title="GraphQL"
           />
           <FaAws
-            size={30}
+            size={25}
             className={`${props.tools.includes('aws') ? 'float' : 'hide'}`}
-            color = "#222e3d"
+            color="#222e3d"
             title="AWS"
           />
           <SiAwslambda
-            size={30}
-            className={`${props.tools.includes('awslambda') ? 'float' : 'hide'}`}
+            size={25}
+            className={`${
+              props.tools.includes('awslambda') ? 'float' : 'hide'
+            }`}
             color="#d16312"
             title="AWS Lambda"
           />
           <SiAmazondynamodb
-            size={30}
+            size={25}
             className={`${props.tools.includes('dynamodb') ? 'float' : 'hide'}`}
             color="#4763e1"
             title="DynamoDB"
