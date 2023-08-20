@@ -1,6 +1,10 @@
 import Loader from 'react-loaders'
 import './index.scss'
 import Typewriter from 'typewriter-effect'
+import Gaming from '../../assets/images/gaming-pc.png'
+import Family from '../../assets/images/family-pink.png'
+import Guitar from '../../assets/images/instruments.png'
+import Corgi from '../../assets/images/corgi-blue.png'
 
 const About = () => {
   return (
@@ -45,6 +49,13 @@ const About = () => {
             done in my lifetime, the one and only answer would be: "For my
             family."
           </p>
+        </div>
+
+        <div className ="images">
+            <img src = {Gaming} />
+            <img src = {Family} />
+            <img src = {Guitar} />
+            <img src = {Corgi} />
         </div>
       </div>
 
