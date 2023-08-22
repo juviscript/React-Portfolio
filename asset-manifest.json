@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/juviscript-portfolio/static/css/main.cf9d74ca.css",
+    "main.js": "/juviscript-portfolio/static/js/main.7d2e687b.js",
+    "static/js/787.6fe89771.chunk.js": "/juviscript-portfolio/static/js/787.6fe89771.chunk.js",
+    "static/media/gamegar-overview.gif": "/juviscript-portfolio/static/media/gamegar-overview.3f0dc4265d0e744790a0.gif",
+    "static/media/gaming-pc.png": "/juviscript-portfolio/static/media/gaming-pc.192e5895e64cd9507c3a.png",
+    "static/media/family-pink.png": "/juviscript-portfolio/static/media/family-pink.a2fcd187116618f0312a.png",
+    "static/media/aniverse-logo.png": "/juviscript-portfolio/static/media/aniverse-logo.2785df31b4a5a6bbbb2e.png",
+    "static/media/instruments.png": "/juviscript-portfolio/static/media/instruments.44927bb1e47a25fd9742.png",
+    "static/media/corgi-blue.png": "/juviscript-portfolio/static/media/corgi-blue.1c54d55a0ee643cfe322.png",
+    "static/media/portfolio-logo.png": "/juviscript-portfolio/static/media/portfolio-logo.16847e0655e6e921349d.png",
+    "static/media/gamegar-logo.png": "/juviscript-portfolio/static/media/gamegar-logo.25d0ec2cc850f1f9218f.png",
+    "static/media/helvetica-neu.ttf": "/juviscript-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/juviscript-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/juviscript-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/juviscript-portfolio/index.html",
+    "main.cf9d74ca.css.map": "/juviscript-portfolio/static/css/main.cf9d74ca.css.map",
+    "main.7d2e687b.js.map": "/juviscript-portfolio/static/js/main.7d2e687b.js.map",
+    "787.6fe89771.chunk.js.map": "/juviscript-portfolio/static/js/787.6fe89771.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf9d74ca.css",
+    "static/js/main.7d2e687b.js"
+  ]
+}
