@@ -5,6 +5,7 @@ import Gaming from '../../assets/images/gaming-pc.png'
 import Family from '../../assets/images/family-pink.png'
 import Guitar from '../../assets/images/instruments.png'
 import Corgi from '../../assets/images/corgi-blue.png'
+import Navi from '../../assets/images/navi.png'
 
 const About = () => {
   return (
@@ -51,11 +52,89 @@ const About = () => {
           </p>
         </div>
 
-        <div className ="images">
-            <img src = {Gaming} />
-            <img src = {Family} />
-            <img src = {Guitar} />
-            <img src = {Corgi} />
+        <div className="images">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src={Gaming} />
+              </div>
+
+              <div class="flip-card-back" id="gaming">
+                <h2>Video Games</h2>
+
+                <p>
+                  I'm an avid gamer! I mostly play PC, but console of choice is
+                  Playstation. Here's some of my favorites:
+                </p>
+                <ul>
+                  <li>Kingdom Hearts</li>
+                  <li>Apex Legends</li>
+                  <li>Hearthstone</li>
+                  <li>7 Days to Die</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src={Family} />
+              </div>
+
+              <div class="flip-card-back" id="family">
+                <h2>Family</h2>
+                <p>
+                  Family is extremely important to me. I have my mom, dad, 2
+                  sisters, and my nieces and nephew here in America and lots and lots
+                  more family in the Philippines!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src={Guitar} />
+              </div>
+
+              <div class="flip-card-back" id="guitar">
+                <h2>Music</h2>
+                <p>
+                  Music is a big part of my life. I was in band class when I was
+                  younger and in a band with some friends! I play flute, guitar,
+                  ukulele, and piano!
+                </p>
+                <p>
+                  I can't go a day without listening to some kind of
+                  music. Here's some of my favorite artists:
+                </p>
+
+                <ul>
+                  <li>Paramore</li>
+                  <li>EDEN</li>
+                  <li>Dance Gavin Dance</li>
+                  <li>Asian Kung Fu Generation</li>
+                  <li>Bruno Mars</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src={Corgi} />
+              </div>
+              <div class="flip-card-back" id="corgi">
+                <h2>Navi</h2>
+                <p>That's my pup and my bestest friend in the whole entire world! Look, she can drive!</p>
+
+                <img src = {Navi} id = "navi"/>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
