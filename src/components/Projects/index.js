@@ -7,6 +7,9 @@ import Gamegar from '../../assets/images/gamegar-logo.png'
 import GamegarGif from '../../assets/images/gamegar-overview.gif'
 import Aniverse from '../../assets/images/aniverse-logo.png'
 import Portfolio from '../../assets/images/portfolio-logo.png'
+import PortfolioGif from '../../assets/images/juviscript-portfolio.gif'
+import AniverseGif from '../../assets/images/aniverse-overview.gif'
+
 
 const Projects = () => {
   return (
@@ -58,7 +61,7 @@ const Projects = () => {
           />
           <Card
             img={Aniverse}
-            gif={GamegarGif}
+            gif={AniverseGif}
             title="AniVerse"
             description="Robust anime catalog where you can create an account, follow friends, add anime to your list of favorites. Built with basic front-end and a Spring Boot backend. Deployed on AWS and incorprated AWS Lambdas for a notification system. Database is filled by External API (AniList) using GraphQL."
             github=""
@@ -78,7 +81,7 @@ const Projects = () => {
 
           <Card
             img={Portfolio}
-            gif={GamegarGif}
+            gif={PortfolioGif}
             title="Personal Porfolio"
             description="This very website we're using! Built on React.js and has seveal node libraries and components installed. One of the first few React projects I've worked on!"
             github="https://github.com/juviscript/juviscript-portfolio"
