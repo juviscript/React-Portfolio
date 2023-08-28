@@ -1,19 +1,17 @@
 .card-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  position: relative;
   width: 48vw;
   max-width: 2000px;
   height: 30vh;
   border-radius: 20px;
-  background-color: #F7F1DE;
+  background-color: #f7f1de;
   -webkit-animation-duration: 10s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-
- 
 
   &:hover {
     scale: 1.05;
@@ -32,9 +30,34 @@
     animation-delay: 2.6s;
   }
 
+  .stationary {
+    width: 24vh;
+    height: 15vh;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .gif {
+    display: none;
+    width: 24vh;
+    height: 15vh;
+    border-radius: 5px;
+  }
+
+  &:hover {
+    .stationary {
+      display: none; /* On hover of the card, hides the icon/logo of the site and shows a demo gif. */
+    }
+
+    .gif {
+      display: block;
+    }
+  }
+
   .info {
     max-width: 55%;
-    // height: fit-content;
+    height: fit-content;
+    margin: auto 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     h2 {
@@ -47,107 +70,73 @@
 
     .description {
       min-height: 60px;
-      margin: auto;
-      font-size: 14px;
+      font-size: 1.5rem;
       font-weight: 400;
-     
     }
 
     .buttons {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       width: 70%;
       margin: 20px auto;
     }
 
     .flat-button {
       color: white;
-      background: #91B6B3;
-      font-size: 14px;
+      background: #91b6b3;
+      font-size: 1.5rem;
       font-weight: 500;
       letter-spacing: 3px;
       font-family: Tahoma, Geneva, Verdana, sans-serif;
       text-decoration: none;
       padding: 5px 15px;
-      border: 2px solid #91B6B3;
+      border: 2px solid #91b6b3;
       border-radius: 5px;
-      margin: auto;
       float: right;
       cursor: pointer;
 
       &:hover {
         background: none;
-        color: #91B6B3;
+        color: #91b6b3;
         transform: scale(1.02);
         transition: all 0.3s ease-in-out;
       }
     }
-  }
 
-  .images {
-    max-width: 40%;
-    height: fit-content;
+    .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: middle;
+      gap: 15px;
+      height: 12%;
+      text-align: center;
+      margin: 0 15px 20px 0;
 
-    .stationary {
-      width: 28vh;
-      height: 17vh;
-      object-fit: cover;
-      border-radius: 5px;
-    }
+      .hide {
+        display: none; /* Teritary operator in 'icons' section removes this class if the relevant prop is passed in */
+      }
 
-    .gif {
-      display: none;
-      width: 28vh;
-      height: 17vh;
-      border-radius: 5px;
-    }
-  }
+      .float {
+        &:hover {
+          animation-name: floating;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
 
-  .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: middle;
-    gap: 15px;
-    height: 12%;
-    text-align: center;
-    margin: 0 15px 20px 0;
-
-    .hide {
-      display: none;              /* Teritary operator in 'icons' section removes this class if the relevant prop is passed in */
-    }
-
-    .float {
-      &:hover {
-        animation-name: floating;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-
-        @keyframes floating {
-          0% {
-            transform: translate(0, 0px);
-          }
-          50% {
-            transform: translate(0, -3px);
-          }
-          100% {
-            transform: translate(0, 0px);
+          @keyframes floating {
+            0% {
+              transform: translate(0, 0px);
+            }
+            50% {
+              transform: translate(0, -3px);
+            }
+            100% {
+              transform: translate(0, 0px);
+            }
           }
         }
       }
-
-      
-    }
-  }
-
-  &:hover {
-    .stationary {
-      display: none;        /* On hover of the card, hides the icon/logo of the site and shows a demo gif. */
-    }
-
-    .gif {
-      display: block;
     }
   }
 }
@@ -190,5 +179,3 @@
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
-
-
