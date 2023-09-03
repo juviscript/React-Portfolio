@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Desk from '../../assets/images/desk-setup.gif'
+
 
 const Contact = () => {
   const form = useRef()
@@ -114,6 +116,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      
+      <img src = {Desk} id = "desk" className = 
+      "fadeInRight"/>
+      
       <Loader type="pacman" />
       <ToastContainer />
     </>

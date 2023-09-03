@@ -47,6 +47,8 @@ const Projects = () => {
             gif={GamegarGif}
             title="Gamegar"
             description="Simple and clean video game catalog. Built a basic front-end, Spring Boot back-end and was deployable on AWS."
+            recorded = "true"
+            livedemo = "false"
             github="https://github.com/juviscript/Gamegar"
             youtube=""
             tools={[
@@ -64,6 +66,8 @@ const Projects = () => {
             gif={AniverseGif}
             title="AniVerse"
             description="Robust anime catalog where you can create an account, follow friends, add anime to your list of favorites. Built with basic front-end and a Spring Boot backend. Deployed on AWS and incorprated AWS Lambdas for a notification system. Database is filled by External API (AniList) using GraphQL."
+            recorded = "true"
+            livedemo = "false"
             github=""
             youtube=""
             tools={[
@@ -86,6 +90,8 @@ const Projects = () => {
             description="This very website we're using! Built on React.js and has seveal node libraries and components installed. One of the first few React projects I've worked on!"
             github="https://github.com/juviscript/juviscript-portfolio"
             youtube=""
+            recorded = "false"
+            livedemo = "true"
             tools={[
               'html',
               'css',

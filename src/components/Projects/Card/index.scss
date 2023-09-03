@@ -101,6 +101,12 @@
         transform: scale(1.02);
         transition: all 0.3s ease-in-out;
       }
+
+     
+    }
+
+    .hide {
+      display: none; /* Teritary operator in 'icons' section removes this class if the relevant prop is passed in */
     }
 
     .icons {

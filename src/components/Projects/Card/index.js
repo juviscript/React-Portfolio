@@ -21,7 +21,10 @@ const Card = (props) => {
         <h2 className="game-title">{props.title}</h2>
         <div className="description">{props.description}</div>
         <div className='buttons'>
-          <button className="flat-button">Recorded Demo</button>
+          <button className={`${props.recorded == ('true') ? 'flat-button' : 'hide'}`}>Recorded Demo</button>
+          <a target="_blank" rel="noreferrer" href={props.live}> 
+          <button className={`${props.livedemo == ('true') ? 'flat-button' : 'hide'}`}>Live Demo</button>
+          </a>
           <a target="_blank" rel="noreferrer" href={props.github}> 
           <button className="flat-button">Source Code</button>
           </a>
