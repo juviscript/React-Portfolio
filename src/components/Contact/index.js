@@ -6,10 +6,14 @@ import { useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Desk from '../../assets/images/desk-setup.gif'
-
+import React, { useState } from 'react';
 
 const Contact = () => {
   const form = useRef()
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -33,6 +37,10 @@ const Contact = () => {
             progress: undefined,
             theme: 'colored',
           })
+          setName('')
+          setEmail('')
+          setSubject('')
+          setMessage('')
         },
         () => {
           toast.error('Server error. Please try again later!', {
@@ -83,7 +91,14 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    onChange={(event) => setName(event.target.value)}
+                    value={name}
+                    required
+                  />
                 </li>
 
                 <li className="half">
@@ -91,6 +106,8 @@ const Contact = () => {
                     type="email"
                     name="reply_to"
                     placeholder="Email"
+                    onChange={(event) => setEmail(event.target.value)}
+                    value={email}
                     required
                   />
                 </li>
@@ -100,12 +117,20 @@ const Contact = () => {
                     type="text"
                     name="subject"
                     placeholder="Subject"
+                    onChange={(event) => setSubject(event.target.value)}
+                    value={subject}
                     required
                   />
                 </li>
 
                 <li>
-                  <textarea name="message" placeholder="Message" required />
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    onChange={(event) => setMessage(event.target.value)}
+                    value={message}
+                    required
+                  />
                 </li>
 
                 <li>
@@ -117,10 +142,8 @@ const Contact = () => {
         </div>
       </div>
 
-      
-      <img src = {Desk} id = "desk" className = 
-      "fadeInRight"/>
-      
+      <img src={Desk} id="desk" className="fadeInRight" />
+
       <Loader type="pacman" />
       <ToastContainer />
     </>
